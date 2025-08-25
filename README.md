@@ -14,7 +14,7 @@ A simplified, real-time dashboard for monitoring CI/CD pipelines with email noti
 ## 🏗️ Architecture Summary
 
 ```
-Frontend (React) ←→ Backend (Node.js/Express) ←→ SQLite Database
+Frontend (React) ←→ Backend (Node.js) ←→ Prostgre Database
        ↓                    ↓                        ↓
    Nginx Proxy         Email Service           Data Files
        ↓                    ↓
@@ -22,7 +22,7 @@ Frontend (React) ←→ Backend (Node.js/Express) ←→ SQLite Database
 ```
 
 ### **Technology Stack**
-- **Backend**: Node.js 18+, Express.js, TypeScript, SQLite
+- **Backend**: Node.js 18+, Express.js
 - **Frontend**: React 18, TypeScript, Vite, CSS Grid/Flexbox
 - **Infrastructure**: Docker, Docker Compose, Nginx
 - **Email**: Nodemailer with SMTP integration
