@@ -1,0 +1,31 @@
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# Vite
+frontend/.vite/
+
+# Docker
+*.pid
+*.sock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Postgres
+pgdata/
