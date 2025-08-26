@@ -36,14 +36,6 @@ User:
 
 Assistant: [Acknowledged and outlined PAT + Slack alert requirement, confirmed.]
 
-User: Sent GitHub PAT (later revoked), asked about Slack notification.
-
-Assistant: [Warned to revoke PAT, suggested Slack Incoming Webhook or Bot, explained options.]
-
-User: Confirmed PAT recreated, will use Slack Webhook, wants @channel mention.
-
-Assistant: [Gave `.env.template` and described Slack integration.]
-
 User: Ok now generate the code.
 
 Assistant: [Generated project code, zipped it, provided download link.]
@@ -62,10 +54,6 @@ Assistant: [Simplified backend Dockerfile, removed apt-get.]
 
 User: NPM error with npm ci.
 
-Assistant: [Fixed frontend Dockerfile to use npm install, added missing plugin.]
-
-User: Port 80 conflict.
-
 Assistant: [Suggested changing FRONTEND_PORT in .env and docker-compose.yml.]
 
 User: Now frontend page blank.
@@ -79,22 +67,3 @@ Assistant: [Reiterated fix: add proxy config.]
 User: Confirmed working, asked to add colors/enhance dashboard.
 
 Assistant: [Provided updated Dashboard.tsx and styles.css with colorful KPIs, dark mode, charts, modals.]
-
-User: Asked for requirement analysis document as docx.
-
-Assistant: [Generated RAD in Word format, provided download link.]
-
-User: Asked for technical design doc.
-
-Assistant: [Generated TDD in Word format, provided download link.]
-
-User: Asked to add diagrams.
-
-Assistant: [Generated TDD with diagrams (architecture, data flow, ERD), provided docx.]
-
-User: Asked for updated README.md with all steps.
-
-Assistant: [Provided updated README.md content.]
-
-User: Asked for whole chat logs in file named prompt_logs.txt.
-
