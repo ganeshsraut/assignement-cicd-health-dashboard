@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App theme helpers */
+:root {
+  --card: 255 255 255;         /* white */
+  --ink: 15 23 42;             /* slate-900 */
+  --muted: 100 116 139;        /* slate-500 */
+  --accent: 79 70 229;         /* indigo-600 */
+  --ok: 5 150 105;             /* emerald-600 */
+  --err: 220 38 38;            /* red-600 */
+  --warn: 202 138 4;           /* amber-600 */
+}
+
+.dark :root {
+  --card: 15 23 42;            /* slate-900 */
+  --ink: 226 232 240;          /* slate-200 */
+  --muted: 148 163 184;        /* slate-400 */
+}
+
+body {
+  @apply bg-gradient-to-b from-slate-50 to-slate-100 text-slate-900;
+}
+
+.dark body {
+  @apply from-slate-900 to-slate-950 text-slate-100;
+}
+
+.kpi {
+  @apply rounded-2xl shadow p-5 border;
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(248,250,252,0.9));
+}
+
+.dark .kpi {
+  background: linear-gradient(180deg, rgba(30,41,59,0.9), rgba(2,6,23,0.9));
+}
+
+.badge {
+  @apply px-2 py-0.5 rounded text-xs font-semibold inline-flex items-center gap-1;
+}
+
+.badge-success { @apply bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300; }
+.badge-failure { @apply bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300; }
+.badge-other   { @apply bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300; }
+
+.btn {
+  @apply inline-flex items-center gap-2 px-3 py-2 rounded-lg border font-medium hover:opacity-90 transition;
+}
+
+.btn-primary {
+  @apply text-white border-indigo-700;
+  background: linear-gradient(135deg, rgb(79 70 229), rgb(99 102 241));
+}
+
+.card {
+  @apply rounded-2xl border shadow bg-white dark:bg-slate-900;
+}
